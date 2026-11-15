@@ -1,0 +1,9 @@
+[
+  {"aliases":{"ss":"X"},"chunks":["a","ß","b"],"expected":"aXb"},
+  {"aliases":{"s":"X"},"chunks":["aßb"],"expected":"aßb"},
+  {"aliases":{"a":"1","ab":"2","bc":"3"},"chunks":["a","bc"],"expected":"2c"},
+  {"aliases":{"ff":"X","i":"Y"},"chunks":["ﬃ"],"expected":"ﬃ"},
+  {"aliases":{"İ":"Q","i":"R"},"chunks":["İ","i"],"expected":"QR"},
+  {"aliases":{"a":"aa","z":""},"chunks":["az"],"expected":"aa"},
+  {"aliases":{},"chunks":["","测","试"],"expected":"测试"}
+]
